@@ -1,0 +1,25 @@
+[Eth]
+NetworkId = 1973
+GasPrice = 0
+EnablePreimageRecording = false
+
+[Node]
+DataDir = "data/node-0"
+IPCPath = "geth.ipc"
+HTTPPort = 8000
+HTTPHost = "localhost"
+HTTPVirtualHosts = ["localhost"]
+HTTPModules = ["net", "admin", "kv"]
+
+[Node.P2P]
+MaxPeers = 25
+NoDiscovery = false
+BootstrapNodes = [
+    "enode://dc9a088eaaf21d53c48405199d58aa9e1424a731694f0fc0fa27aa849bc8bb150074a79fe33eaf36bfc0c85a858b2e219c0415a0d00b9d3698e99175371b4b01@127.0.0.1:30000"
+]
+
+StaticNodes = []
+TrustedNodes = [
+]
+ListenAddr = "localhost:30000"
+EnableMsgEvents = false
